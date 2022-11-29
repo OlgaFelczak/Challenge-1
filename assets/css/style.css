@@ -1,17 +1,21 @@
+/* For the whole webpage the total width and height of an element are calculated including padding and border, elements should be not pushed from the borders and do not have free space outside the border */
 * {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
 }
 
+/* Light grey color for whole body of the page */
 body {
   background-color: #d9dcd6;
 }
 
+/* All paragraphs should have font-size 16 px */
 p {
   font-size: 16px;
 }
 
+/* Header inner content should be pushed from the border by 20px, set different font-family and blue background-color with white text */
 header {
   padding: 20px;
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
@@ -20,15 +24,18 @@ header {
   color: #ffffff;
 }
 
+/* The h1 in header should be display inline with width and height respected and have font size 48 px */
 header h1 {
   display: inline-block;
   font-size: 48px;
 }
 
+/* h1 that have the class seo inside the header should have light grey color */
 header h1 .seo {
   color: #d9dcd6;
 }
 
+/* Nav element inner content should be pushed from the top by 15px and should have free space outside the border to the right of 20px, should be aligned to the right side of the page, with different font and font-size set to 20px */
 header nav {
   padding-top: 15px;
   margin-right: 20px;
@@ -37,47 +44,54 @@ header nav {
   font-size: 20px;
 }
 
+/* Unordered list for header's nav tags should not have any bullet points */
 header nav ul {
   list-style-type: none;
 }
 
+/* List items for unordered list for header's nav tags should be display inline with width and height respected and be pushed from the left for 25 px */
 header nav ul li {
   display: inline-block;
   margin-left: 25px;
 }
 
+/* All links for list items for unordered list for header's nav tags shlould have white text color and have not any text decoration */
 header nav ul li a {
   color: #ffffff;
   text-decoration: none;
 }
 
+/* All section tags with the class hero should have margin bottom 25 px */
 section.hero {
   margin-bottom: 25px;
 }
 
+/* All img tags for section with the class hero should have height of 800 px, width of 100% available space */
 section.hero img {
   height: 800px;
   width: 100%;
-  background-size: cover;
-  background-position: center;
 }
 
+/* All section tags with the class content should have width set to 75% of available space, be displayed inline with height and width respected and be have free space outside the left border of 20px */
 section.content {
   width: 75%;
   display: inline-block;
   margin-left: 20px;
 }
 
+/* Img tags that have class float-left and are inside section tags with class content should be displayed on the left site and have 25px of free space on the right side outside the border */
 section.content img.float-left {
   float: left;
   margin-right: 25px;
 }
 
+/* Images that have class float-right and are inside section with class content should be displayed on the right site and have 25px of free space on the left side outside the border */
 section.content img.float-right {
   float: right;
   margin-left: 25px;
 }
 
+/* All article tags in the section tags with the class content should have 20 px of free space below the border, inner content should be pushed from the border by 50px, their height should be set to 300px, they should have different font, background color set to light blue and text color set to white */
 section.content article {
   margin-bottom: 20px;
   padding: 50px;
@@ -87,15 +101,18 @@ section.content article {
   color: #ffffff;
 }
 
+/* All img tags that are inside the article tag that is inside the section tags with the class content should have maximum height 200 px */
 section.content article img {
   max-height: 200px;
 }
 
+/* All h2 inside article tags that are inside the section tags with the class content should have 20 px of free space below the border and font size 36 px */
 section.content article h2 {
   margin-bottom: 20px;
   font-size: 36px;
 }
 
+/* All aside tags content should have 20 px of free space on the right outside the border, inner content should be pushed from the border by 20px, pushed below both left and right floated elements, be on the right side of the space avaialble, should have width set to 20% of the avilable space and height to 100% of the available space, should have different font family and backgroudn color should be set to blue */
 aside {
   margin-right: 20px;
   padding: 20px;
@@ -107,22 +124,26 @@ aside {
   background-color: #2589bd;
 }
 
+/* All div tags inside the aside tags should have free space below the border of 32 px and white text color */
 aside div {
   margin-bottom: 32px;
   color: #ffffff;
 }
 
+/* All h3 inside div tags that are inside aside tags should have 10 px of free space below the border and text aligned to the center of the available space */
 aside div h3 {
   margin-bottom: 10px;
   text-align: center;
 }
 
+/* All img tags that are inside div tags that are inside aside tags should be display in a new line with width and height respected, should have margin free space below and above the border of 10 px, and horizontaly centered, with max width of 150 px */
 aside div img {
   display: block;
   margin: 10px auto;
   max-width: 150px;
 }
 
+/* Footer tag inner content should be pushed from the border by 30px, pushed below both left and right floated elements, set different font-family and text should be aligned to the center of the available space */
 footer {
   padding: 30px;
   clear: both;
@@ -131,6 +152,7 @@ footer {
   text-align: center;
 }
 
+/* H4 tag inside the footer tag should have font size of 20 px */
 footer h4 {
   font-size: 20px;
 }
